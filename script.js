@@ -61,7 +61,8 @@ function notifyMe() {
     // Let's check whether notification permissions have alredy been granted
     else if (Notification.permission === "granted") {
       // If it's okay let's create a notification
-      var notification = new Notification("Hi there!");
+      var notification = new Notification("Hi there!",{
+      badge : "asdas"});
     }
   
     // Otherwise, we need to ask the user for permission
